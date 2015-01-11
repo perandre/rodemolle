@@ -1,0 +1,85 @@
+---
+layout: default
+title: "Kontakt oss for leie av konferanselokale / selskapslokale i Fredrikstad"
+---
+<div class="breadcrumb-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Kontakt</h4>
+            </div>
+            <div class="col-sm-6 hidden-xs text-right">
+                <ol class="breadcrumb">
+                    <li><a href="/">Forside</a></li>
+                    <li>Kontakt oss</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div><!--breadcrumbs-->
+<div class="divide80"></div>
+<div class="container">
+    <div id="map-canvas"></div>
+</div><!--.container-->
+<div class="divide60"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 margin30">
+            <h3 class="heading">Kontakt oss for mer informasjon!</h3>
+            <p>
+                Duis vitae imperdiet ipsum. Vestibulum ullamcorper lorem at orci vulputate, volutpat tempus magna elementum. Nam in odio sem. Morbi in justo interdum massa tristique lobortis in quis diam. Etiam erat urna, cursus eu ante quis, aliquam venenatis augue. Cras turpis justo, pellentesque eu hendrerit et, euismod vitae leo. Ut in lorem lobortis, gravida quam eget, pulvinar quam. Nam ut leo leo.
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <h3 class="heading">Contact info</h3>
+            <ul class="list-unstyled contact contact-info">
+                <li><p><strong><i class="fa fa-map-marker"></i> Addresse:</strong> vaisahali, jaipur, 302012</p></li>
+                <li><p><strong><i class="fa fa-envelope"></i> Epost:</strong> <a href="#">Support@designmylife.com</a></p></li>
+                <li> <p><strong><i class="fa fa-phone"></i> Telefon:</strong> +91 1800 2345 2132</p></li>
+            </ul>
+            <div class="divide40"></div>
+
+        </div>
+    </div>
+</div>
+<div class="divide40"></div>
+
+<!--gmap js-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript">
+    var myLatlng;
+    var map;
+    var marker;
+
+    function initialize() {
+        myLatlng = new google.maps.LatLng(37.397802, -121.890288);
+
+        var mapOptions = {
+            zoom: 13,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            draggable: false
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var contentString = '<p style="line-height: 20px;"><strong>assan Template</strong></p><p>Vailshali, assan City, 302012</p>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Marker'
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
