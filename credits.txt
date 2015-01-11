@@ -1,0 +1,35 @@
+
+ Scripts
+----------
+
+ 1- JQUERY - http://jquery.com/
+ 2- Bootstrap3.3.1 - http://getbootstrap.com/
+ 3- Font Awesome: http://fortawesome.github.io/Font-Awesome/
+ 4- jquery sticky: https://github.com/garand/sticky
+ 5- wow animations: https://github.com/matthieua/WOW
+ 6- Mixitup filter: https://mixitup.kunkalabs.com/
+ 7- google fonts: https://www.google.com/fonts
+ 8- Flex slider: http://www.woothemes.com/flexslider/
+ 9- google map: https://maps.googleapis.com/maps/api/js?sensor=true
+ 10- Countdown: http://keith-wood.name/countdown.html
+ 11- Owl carousel: http://www.owlgraphic.com/owlcarousel/
+ 12- Parallax backgrounds : https://github.com/markdalgleish/stellar.js/
+ 13- Counters: http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js
+ 14- jquery easing: http://gsgd.co.uk/sandbox/jquery/easing/
+ 15- working and validate contact form: https://github.com/ReactiveRaven/jqBootstrapValidation
+ 16- magnific-popup: http://dimsemenov.com/plugins/magnific-popup/
+ 17- Responsive mockups: http://www.graphicsfuel.com/
+ 18- video background: http://pupunzi.open-lab.com/mb-jquery-components/jquery-mb-ytplayer/
+ 19- Twitter feeds: https://github.com/sonnyt/Tweetie
+
+
+
+
+  Demo IMAGES (all images use for demo purpose only)
+-----------
+
+  1- http://www.gratisography.com/
+  2- http://uifaces.com/
+  3- https://pixabay.com/
+  
+ 
